@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyWineAppSimple</string>
+    <string name="year_of_wine">vintage:</string>
+    <string name="color_of_wine">color:</string>
+    <string name="taste_of_wine">taste:</string>
+    <string name="wine_quantity">quantity</string>
+    <string name="wine_year">vintage</string>
+    <string name="no_wines">no entry found, please insert new wine</string>
+    <string name="add_new_wine">Add wine</string>
+    <string name="input_label_name">name of wine</string>
+    <string name="input_label_year">vintage</string>
+    <string name="input_label_quantity">quantity</string>
+    <string name="cancel_button">Cancel</string>"
+    <string name="save_button">Save</string>
+    <string name="input_screen_header_text">Insert information to add wine to collection</string>
+    <string name="list_label">My Wine Collection:</string>
+    <string name="detail_screen_header_text">change quantity:</string>
+    <string name="back_button">Back</string>
+    <string name="filter_label">Filter collection:</string>
+    <string name="delete_text">delete entry:</string>
+    <string name="delete_button">Delete</string>
+</resources>
