@@ -1,5 +1,5 @@
 # MyWineApp
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/wIJ8A69taEE
 #### Description:
 My final project for CS50 is a android app. I used Android Studio with jetpack compose and kotlin.
 With my App, you can track your wine stock. It uses a sql-database to store information about your wine collection.
