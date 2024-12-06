@@ -12,7 +12,7 @@
     <string name="input_label_quantity">quantity</string>
     <string name="cancel_button">Cancel</string>"
     <string name="save_button">Save</string>
-    <string name="input_screen_header_text">Insert information to add wine to collection</string>
+    <string name="input_screen_header_text">Insert information to add wine to collection, name has to start with capital letter, and year has to be the format yyyy</string>
     <string name="list_label">My Wine Collection:</string>
     <string name="detail_screen_header_text">change quantity:</string>
     <string name="back_button">Back</string>
