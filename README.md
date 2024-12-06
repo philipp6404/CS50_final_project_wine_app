@@ -1,4 +1,4 @@
-# YOUR PROJECT TITLE
+# MyWineApp
 #### Video Demo:  <URL HERE>
 #### Description:
 With my App, you can track your wine stock. It uses a sql-database to store information about your wine collection.
