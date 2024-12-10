@@ -1,12 +1,12 @@
 # MyWineApp
 #### Video Demo:  https://youtu.be/wIJ8A69taEE
 #### Description:
-My final project for CS50 is a android app. I used Android Studio with jetpack compose and kotlin.
-With my App, you can track your wine stock. It uses a sql-database to store information about your wine collection.
-If the database is empty, the app prompts you to add a wine. At the insert-screen you type in the information and click the save button.
-The button is only enabled if all necessary fields are filled. It also validates the correctness of the input.
-Name has to be a string starting with a capital letter and year has to be 4-digit number.
-The home-screen then displays all the entries in your database. By clicking the single wine you be redirected to the detail-screen.
-There you can change the quantity of you wine with the “+” and “-” button or delete the whole entry.
-At the home-screen you can also filter your wines. By filling the filterfield, the home-screen only displays the entries,
-where the name of the wine is "like" the string in the filterfield.
+MyWineApp is my final project for the Havard course CS50. I used Android Studio with jetpack compose and kotlin to design the app. The app allows you to track a wine stock. You can add and manipulate informations of your wine collection. It uses a sql-database to store the information of your wine collection.
+
+As I designed the app, I was following the principle of separation of concerns. Meaning separating the user interface (UI) layer from the data layer. For the UI layer I used different screens. There is a Home-Screen showing your wine collection, a Input-Screen to add new wines und a Detail-Screen to show Information about one single wine and to manipulate Informations depending this single wine. Every single Screen, has a separate viewModel for handeling the logic for this specific Screen. The viewModel is also the important part for handleing the communication between the UI layer and the data layer. As a data layer I used Room. Room is a API that allows access of a SQLite datatbase. Room handles the first initialization of the database and comes with build in functions to manage and manipulate the database. The single functions and queries are also separated through repositories, which allows easy testing and changing of functions. To navigate between the different screens I used a navController. This is a public class to manage the navigation of a app.
+
+At a fresh start of the app the database is empty. At the home-screen you get a prompt to add a wine. By clicking the button at the bottum of the screen, you will be directed to the insert-screen. At this screen you can type in the information, choose the color and the taste of the wine by radio buttons and click the save button to add this wine to the database. The button is only enabled if all necessary fields are filled. It also validates the correctness of the input. All fields has to be filled and there has to be clicked one of the radio buttons for color and taste. The name of the wine has to be a string starting with a capital letter and the vintage of the wine has to be 4-digit number. The quantity has to be a number too. After saving, you will be redirected to the home-screen.
+
+The home-screen then displays all the entries in your database. If there are more entries, than the screen is able to show, you can scroll through the collection. There is also a field for filter the entries. By filling the filterfield, the home-screen only displays the entries, where the name of the wine is "like" the string in the filterfield. You can use this function to search for a specific wine.
+
+By clicking the single wine card in the home-screen you are directed to the detail-screen, showing a single card of the chosen wine. There you can change the quantity of you wine with the “+” and “-” button in steps of one or delete the whole entry.
